@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+const express = require('express');
+
+const sequelize = require('./config/connection');
+
+const app = express();
+const PORT = process.env.PORT || 3001;
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+
+sequelize.sync({ force: false }).then(() => {
+    app.listen(PORT, () => console.log('Now listening'));
+  });
+=======
 const express = require('express');
 const path = require('path');
 const exphbs = require('express-handlebars');
@@ -21,3 +37,4 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
+>>>>>>> 5217b1f8310c41fd888446a3dffbfe3291f2fa5f
