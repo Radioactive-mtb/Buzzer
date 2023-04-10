@@ -1,18 +1,14 @@
-{{#if user}}
-    <h1>Welcome {{user.username}}!</h1>
-{{else}}
-    <h1>Welcome to Buzzer!</h1>
-{{/if}}
+{{! Display a feed of posts }}
+<h2>Posts</h2>
+<ul>
+  {{#each posts}}
+    <li>{{this.content}} - {{this.username}} ({{this.timestamp}})</li>
+  {{/each}}
+</ul>
 
-{{#if tweets}}
-    <div class="tweets">
-        {{#each tweets}}
-            <div class="tweet">
-                <span class="username">{{user.username}}</span>
-                <p>{{text}}</p>
-            </div>
-        {{/each}}
-    </div>
-{{else}}
-    <p>No tweets to display.</p>
-{{/if}}
+{{! Form to submit a new post }}
+<h2>New Post</h2>
+<form action="/posts" method="POST">
+  <textarea name="content" rows="3"></textarea>
+  <input type="submit" value="Post">
+</form>

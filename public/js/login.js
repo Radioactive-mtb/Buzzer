@@ -1,4 +1,4 @@
-app.post('/register', function(req, res){
+app.post('/login', function(req, res){
     console.log(req.body);
     if(req.body.username && req.body.status){
       var newMember = {

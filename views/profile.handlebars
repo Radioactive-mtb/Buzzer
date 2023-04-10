@@ -1,0 +1,12 @@
+{{! Display a user's profile information }}
+<h2>Profile</h2>
+<img src="{{profilePicture}}" alt="{{username}}'s profile picture">
+<p>{{bio}}</p>
+
+{{! Display a list of the user's posts }}
+<h2>Posts</h2>
+<ul>
+  {{#each posts}}
+    {{> post}}
+  {{/each}}
+</ul>
