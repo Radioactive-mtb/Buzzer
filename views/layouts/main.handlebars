@@ -1,32 +1,30 @@
 <!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{title}}</title>
+<html>
+  <head>
     <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-    <nav>
-        <div class="logo">
-            <a href="/">Buzzer</a>
-        </div>
-        {{#if user}}
-            <div class="logout">
-                <form id="logout">
-                    <button type="submit">Logout</button>
-                </form>
-            </div>
-        {{else}}
-            <div class="login-register">
-                <a href="/login">Login</a>
-                <a href="/register">Register</a>
-            </div>
-        {{/if}}
-    </nav>
-    <div class="container">
-        {{{body}}}
-    </div>
-    <script src="/js/logout.js"></script>
-</body>
+    <meta charset="utf-8">
+    <title>Buzzer</title>
+
+  </head>
+  <body>
+    <header>
+      <h1>Buzzer</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/profile">Profile</a></li>
+          <li><a href="/login">Login</a></li>
+          <li><a href="/signup">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+      {{{body}}}
+    </main>
+    
+    <footer>
+      &copy; Buzzer 2023
+    </footer>
+  </body>
 </html>
