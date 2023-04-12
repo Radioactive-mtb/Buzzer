@@ -1,14 +1,20 @@
-# Buzzer
+# **Buzzer** <img src="public/images/Buzzer.png" alt="Buzzer" width="60" height="60"/>
+
 ## Description
 ## Installation
 ## Usage
- ## Contributors
+## Contributors
+ <a href="https://github.com/Radioactive-mtb/Buzzer/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Radioactive-mtb/Buzzer" />
+</a>
 <!-- Made with [contrib.rocks](https://contrib.rocks). -->
-- Haris Mahjoob
+
+- Justen Tatum
 - Melanie Islas
 - Oscar Campos
-- Justen Tatum
 - Ana Campos
+- Haris Mahjoob
+
 ## License
 MIT License
-Copyright (c)
+Copyright (c) 2023 
