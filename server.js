@@ -47,6 +47,10 @@ app.get("/signup", (req, res) => {
   res.render("signup");
 });
 
+app.get("/post", (req, res) => {
+  res.render("post");
+});
+
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
