@@ -2,13 +2,21 @@
 <h2>Posts</h2>
 <ul>
   {{#each posts}}
-    <li>{{this.content}} - {{this.username}} ({{this.timestamp}})</li>
+    <li><strong>{{this.title}}</strong> - {{this.content}} - {{this.username}} ({{this.timestamp}})</li>
   {{/each}}
 </ul>
 
 {{! Form to submit a new post }}
-<h2>New Post</h2>
-<form id="new-post-form" action="/posts" method="POST">
-  <textarea name="content" rows="3"></textarea>
+<form id="new-post-form" action="/api/posts" method="POST">
+  <div>
+    <label for="post-title">Title:</label>
+    <input type="text" id="post-title" name="title">
+  </div>
+  <div>
+    <label for="post-content">Content:</label>
+    <textarea id="post-content" name="content" rows="3"></textarea>
+  </div>
   <input type="submit" value="Post">
 </form>
+
+<script src="/public/js/post.js"></script>
