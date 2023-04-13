@@ -5,7 +5,7 @@
     <small class="text-muted">Posted by {{user.username}} on {{moment created_at format="MMM Do YYYY, h:mm a"}}</small>
   </div>
   <div class="card-body">
-    <p class="card-text">{{post_content}}</p>
+    <p class="card-text">{{post.post_content}}</p>
   </div>
   <div class="card-footer">
     <a href="/posts/{{id}}">View Comments ({{comments.length}})</a>

@@ -1,7 +1,7 @@
 {{! Display a feed of posts }}
 <h2>Posts</h2>
 <ul>
-  {{#each posts}}
+  {{#each posts as |post|}}
     <li><strong>{{this.title}}</strong> - {{this.content}} - {{this.username}} ({{this.timestamp}})</li>
   {{/each}}
 </ul>
