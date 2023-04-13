@@ -1,11 +1,25 @@
 {{! Form to log in to the application }}
 <h2>Login</h2>
-<form action="/login" method="POST">
+<form class="form loginForm">
   <label for="username">Username:</label>
-  <input type="text" name="username" id="username">
+  <input type="text" class="form-input" id="username">
 
   <label for="password">Password:</label>
-  <input type="password" name="password" id="password">
+  <input type="password" class="form-input" id="password">
 
-  <input type="submit" value="Log in">
+  <button class="btn btn-primary" type="submit">Login</button>
 </form>
+
+{{! Form to sign up for a new account }}
+<h2>Sign Up</h2>
+<form class="form signupForm">
+  <label for="username">Username:</label>
+  <input type="text" class="form-input" id="username-signup">
+
+  <label for="password">Password:</label>
+  <input type="password" class="form-input" id="password-signup">
+
+  <button class="btn btn-primary" type="submit">Signup</button>
+</form>
+
+<script src="./js/login.js"></script>
