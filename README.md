@@ -9,7 +9,8 @@ You can access the webpage through the CLI using npm start or through Heroku.
 - User can use the app to post and view comments.
 - User is first presented with a homepage with a login/signup button at the top of the page. 
 
-![Alt text](public/images/homepage.png)
+<img src="public/images/homepage.png" alt="homepage" width="500" height="300">
+
 - User can signup for a new account or login to an existing account when they click on the login/signup button.
 - Once logged in, the user can view the homepage, and create new posts when they click the home button and view their profile when they click on profile. 
 - The user can also logout when they click the logout button, and will no longer be able to create new posts.
@@ -30,3 +31,5 @@ MIT License
 Copyright (c) 2023 
 ## Link to Github repo:
 https://github.com/Radioactive-mtb/Buzzer
+## Link to deployed project
+https://fathomless-wave-31109.herokuapp.com/
