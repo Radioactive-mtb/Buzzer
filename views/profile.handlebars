@@ -7,8 +7,6 @@
 <h2>Posts</h2>
 <ul>
   {{#each posts as |post|}}
-    <li>{{post}}</li>
+    <li><strong>{{post.title}}</strong> - {{post.post_content}} - {{post.user.username}} ({{ format_date post.createdAt}})</li>
   {{/each}}
 </ul>
-
-<script src="/public/js/post.js"></script>
