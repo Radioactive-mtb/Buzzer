@@ -12,11 +12,13 @@ const newFormHandler = async (event) => {
           'Content-Type': 'application/json',
         },
       });
+      
+      console.log(response);
 
       const responseData = await response.json();
   
       // Redirect to new post
-      window.location.href=`/posts/${responseData.id}`;
+      window.location.href=`/post/${responseData.id}`;
     }
   };
   
@@ -37,10 +39,10 @@ const newFormHandler = async (event) => {
   };
   
   document
-    .querySelector('.new-post-form')
+    .querySelector('#new-post-form')
     .addEventListener('submit', newFormHandler);
-  
+  /*
   document
     .querySelector('.post-list')
     .addEventListener('click', delButtonHandler);
-  
+  */

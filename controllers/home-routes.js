@@ -33,15 +33,14 @@ router.get("/post/:id", async (req, res) => {
       include: [
         {
           model: User,
-          attributes: ["name"],
         },
       ],
     });
-
+    console.log(postData);
     const post = postData.get({ plain: true });
 
     res.render("post", {
-      ...project,
+      ...post,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
