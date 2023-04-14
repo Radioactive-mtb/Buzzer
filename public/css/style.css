@@ -1,99 +1,121 @@
-/* Reset some default browser styles */
+/* Reset default margins and paddings */
 body {
   margin: 0;
   padding: 0;
-}
-
-/* Style the header */
-header {
+  }
+  
+  /* Header */
+  header {
   background-color: #6ebeff;
   color: #000000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-}
-
-header h1 {
+  }
+  
+  header h1 {
   margin: 0;
   font-size: 60px;
   font-weight: bold;
-}
-
-header img {
-  height: 100%;
+  }
+  
+  header img {
   max-width: 250px;
-  display: block;
   margin: 0 auto;
-}
-
-nav ul {
+  }
+  
+  /* Navigation */
+  nav ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   font-size: larger;
-}
-
-nav li {
+  }
+  
+  nav li:not(:last-child) {
   margin-right: 10px;
-}
-
-nav a {
+  }
+  
+  nav a {
   color: #000000;
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
-  padding: 10px;
+  padding: 5px;
   transition: all 0.2s ease;
-}
-
-nav a:hover {
+  }
+  
+  nav a:hover {
   background-color: #000000;
   color: #ffffff;
-}
-
-/* Style the main content */
-main {
-  margin: 20px;
-}
-
-h2 {
+  padding: 4px;
+  }
+  
+  /* Main content */
+  main {
+  margin: 50px;
+  }
+  
+  h2 {
   margin-top: 20px;
-}
-
-ul {
+  text-decoration: underline;
+  }
+  
+  ul {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-li {
+  }
+  
+  li {
   margin-bottom: 10px;
-}
-
-form {
+  }
+  
+  form {
   margin-top: 20px;
-}
-
-textarea {
+  }
+  
+  textarea {
   width: 100%;
-}
-
-input[type="submit"] {
+  }
+  
+  input[type="submit"] {
   background-color: #000000;
   color: #fff;
   border: none;
   padding: 10px;
   cursor: pointer;
-}
-
-input[type="submit"]:hover {
+  }
+  
+  input[type="submit"]:hover {
   background-color: #111111;
-}
-
-/* Style the footer */
-footer {
+  }
+  
+  label {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 19.2px;
+  }
+  
+  /* Buttons */
+  button.btn.btn-primary {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+  }
+  
+  button.btn.btn-primary:hover {
+  background-color: #111111;
+  }
+  
+  /* Footer */
+  footer {
   background-color: #6ebeff;
   color: #000000;
   text-align: center;
@@ -102,8 +124,27 @@ footer {
   bottom: 0;
   width: 100%;
   z-index: 1;
-}
-
+  }
+  
+  /* Logout button */
+  #logout {
+  background: none;
+  border: none;
+  color: #000000;
+  font-weight: bold;
+  font-size: 19.2px;
+  font-family: "Times New Roman", Times, serif;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+  margin-right: 10px;
+  padding: 0;
+  }
+  
+  #logout:hover {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 4px;
+  }
 
 /* Media queries for different screen sizes */
 @media only screen and (max-width: 600px) {
